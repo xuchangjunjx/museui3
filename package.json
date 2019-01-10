@@ -9,6 +9,9 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "highlight.js": "^9.13.1",
+    "ionicons": "^4.5.1",
+    "marked": "^0.6.0",
     "material-design-icons": "^3.0.1",
     "muse-ui": "^3.0.1",
     "typeface-roboto": "0.0.54",
@@ -31,6 +34,7 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
+    "raw-loader": "^1.0.0",
     "vue-template-compiler": "^2.5.17"
   }
 }
