@@ -1,0 +1,66 @@
+@import "../../assets/varaible.less";
+.child-view {
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.slide-left-enter,
+.slide-right-leave-active {
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  transform: translate3d(-80px, -50px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  transform: translate3d(0, 0, 0);
+}
+body {
+  background-color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, Lato, sans-serif;
+}
+.example-appbar {
+  position: fixed;
+  left: 256px;
+  right: 0;
+  top: 0;
+  width: auto;
+  transition: all 0.45s @easeOutFunction;
+  &.nav-hide {
+    left: 0;
+  }
+}
+
+.content-body {
+  padding-top: 56px;
+  padding-left: 256px;
+  transition: all 0.45s @easeOutFunction;
+  &.nav-hide {
+    padding-left: 0;
+  }
+}
+
+.content-wrapper {
+  padding: 48px 72px;
+}
+
+@media (min-width: 480px) {
+  .content-body {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 993px) {
+  .example-appbar {
+    left: 0;
+  }
+  .content-body {
+    padding-left: 0;
+  }
+  .content-wrapper {
+    padding: 24px 36px;
+  }
+}
+.home-page {
+  padding: 0;
+  .content-body {
+    transition-duration: 0s;
+  }
+}

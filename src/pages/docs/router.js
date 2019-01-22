@@ -1,25 +1,30 @@
 import Vue from "vue";
 import Router from "vue-router";
-import HelloWorld from "@/components/HelloWorld";
-import Readme from "./views/readme/readme";
 Vue.use(Router);
 
 let router = new Router({
   routes: [
     {
       path: "/",
-      name: "HelloWorld",
-      component: HelloWorld
+      name: "Home",
+      component: () => import("./views/home/home"),
+      children: [
+        {
+          path: "/readme",
+          name: "readme",
+          component: () => import("./views/readme/readme")
+        },
+        {
+          path: "/render",
+          name: "render",
+          component: () => import("./views/render/render")
+        }
+      ]
     },
     {
-      path: "/readme",
-      name: "readme",
-      component: Readme
-    },
-    {
-      path: "/render",
-      name: "render",
-      component: () => import("./views/render/render")
+      path: "/login",
+      name: "Login",
+      component: () => import("./views/login/login")
     }
   ]
 });
