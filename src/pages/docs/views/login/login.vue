@@ -1,12 +1,19 @@
 <template>
-  <div class="login">
+  <div>
+    <div class="login"></div>
     <mu-container class="container">
       <mu-form ref="form" :model="form" class="mu-demo-form" :rules="rules">
         <mu-form-item label="用户名" prop="userName">
-          <mu-text-field color="secondary" v-model="form.userName" autocomplete="new-password" prop="userName"></mu-text-field>
+          <mu-text-field
+            color="secondary"
+            v-model="form.userName"
+            autocomplete="new-password"
+            prop="userName"
+          ></mu-text-field>
         </mu-form-item>
         <mu-form-item label="密码" prop="password">
-          <mu-text-field color="secondary"
+          <mu-text-field
+            color="secondary"
             v-model="form.password"
             prop="password"
             autocomplete="new-password"
