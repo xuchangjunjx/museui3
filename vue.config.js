@@ -5,7 +5,6 @@ module.exports = {
     process.env.NODE_ENV === "production" ? "/production-sub-path/" : "/",
   pages,
   chainWebpack: config => {
-    // GraphQL Loader
     config.module
       .rule("md")
       .test(/\.md$/)

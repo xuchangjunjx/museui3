@@ -6,13 +6,14 @@
              :overlay="docked"
              class="app-drawer"
              :zDepth="1">
-    <mu-appbar :zDepth="0"
-               color="primary"
-               style="width:100%"
-               class="exmaples-nav-appbar">
-
-    </mu-appbar>
-    <mu-list toggle-nested>
+ <mu-card style="width: 100%;margin: 0 auto;" :style="{'background-color':this.$theme.secondary}">
+  <mu-card-header title="Myron Avatar" sub-title="sub title">
+    <mu-avatar slot="avatar">
+        <img src="../assets/avatar.jpeg" alt="" srcset="">
+    </mu-avatar>
+  </mu-card-header>
+</mu-card>
+     <mu-list toggle-nested>
       <mu-list-item button
                     :ripple="false"
                     nested

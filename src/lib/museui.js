@@ -1,5 +1,6 @@
 import Vue from "vue";
 import "muse-ui/lib/styles/base.less";
+import custtheme from "./theme";
 import {
   Alert,
   AppBar,
@@ -46,7 +47,7 @@ import {
   theme
 } from "muse-ui";
 import "muse-ui/lib/styles/theme.less";
- 
+
 Vue.use(Alert);
 Vue.use(AppBar);
 Vue.use(AutoComplete);
@@ -89,15 +90,6 @@ Vue.use(Switch);
 Vue.use(Tabs);
 Vue.use(TextField);
 Vue.use(Tooltip);
-// theme.add(
-//   "teal",
-//   {
-//     primary: "#009688",
-//     secondary: "#ff4081",
-//     success: "#4caf50",
-//     warning: "#ffeb3b"
-//   },
-//   "light"
-// );
+theme.add("teal", custtheme, "light");
 
-// theme.use("teal");
+theme.use("teal");

@@ -28,9 +28,9 @@
         <router-view class="child-view" />
         <mu-backtop right="72px">
         </mu-backtop>
-        <mu-backtop :click="functiontest">
+        <!-- <mu-backtop :click="functiontest">
           <mu-icon value="build"></mu-icon>
-        </mu-backtop>
+        </mu-backtop> -->
         <!-- <transition name="slide-left"
                     mode="out-in">
           <router-view class="child-view" />
@@ -58,6 +58,8 @@ export default {
     isHomePage() {
       return this.$route.fullPath === "/index";
     }
+  },
+   watch: {
   },
   mounted() {
     this.routes = this.$router.options.routes;
