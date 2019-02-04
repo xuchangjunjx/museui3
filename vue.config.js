@@ -1,4 +1,8 @@
 const pages = require("./utils");
+const path = require("path");
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
 
 module.exports = {
   baseUrl:
@@ -11,5 +15,6 @@ module.exports = {
       .use("raw-loader")
       .loader("raw-loader")
       .end();
+    config.resolve.alias.set("$index", resolve("src/pages/index"));
   }
 };

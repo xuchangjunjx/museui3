@@ -10,16 +10,15 @@ export default {
   data() {
     return {};
   },
-  mounted(){
-  }
+  mounted() {}
 };
 </script>
 <style>
 html,
-body,.body,
+body,
+.body,
 .child-view {
   height: 100%;
   width: 100%;
 }
 </style>
-

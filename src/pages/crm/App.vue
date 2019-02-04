@@ -1,23 +1,23 @@
 <style>
-  video {
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    width: auto;
-    /*加滤镜*/
-    /*-webkit-filter: grayscale(100%);*/
-    /*filter:grayscale(100%);*/
-    z-index: -11;
-  }
-  source {
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    width: auto;
-  }
+video {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  /*加滤镜*/
+  /*-webkit-filter: grayscale(100%);*/
+  /*filter:grayscale(100%);*/
+  z-index: -11;
+}
+source {
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+}
 </style>
 
 <template>
@@ -35,6 +35,6 @@
 
 <script>
 export default {
-  name: 'home'
+  name: "home"
 };
 </script>

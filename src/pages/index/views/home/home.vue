@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import AppNavDrawer from "@/pages/docs/components/AppNavDrawer";
+import AppNavDrawer from "$index/components/AppNavDrawer";
 import BackTop from "@/components/BackTop";
 export default {
   data() {
@@ -59,8 +59,7 @@ export default {
       return this.$route.fullPath === "/index";
     }
   },
-   watch: {
-  },
+  watch: {},
   mounted() {
     this.routes = this.$router.options.routes;
     this.setTitle();

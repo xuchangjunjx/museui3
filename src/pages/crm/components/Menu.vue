@@ -22,12 +22,9 @@
 </template>
 <script>
 export default {
-    name:'my-menu',
-    data(){
-        return {
-
-        }
-    }
-}
+  name: "my-menu",
+  data() {
+    return {};
+  }
+};
 </script>
-
